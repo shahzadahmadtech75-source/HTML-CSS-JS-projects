@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            width: 600px;
+            height: 400px;
+            background: radial-gradient(circle, #000000 0%, #3e2b2b 50%, #000000 100%);
+
+            border: 2px solid cyan;
+            border-radius: 30px;
+            transform: translate(50%, 30%);
+
+        }
+        #clock:hover{
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+
+        }
+        #hour:hover {
+            background: linear-gradient(to right, red, yellow);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        #hour, #minute, #second {
+    border: 2px solid gold;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px green;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 30%;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+        #hour {
+            border: 2px solid gold;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 10px green;
+            height: 70px;
+            width: 90px;
+            text-align: center;
+            border-radius: 30%;
+            padding: 30px;
+            font-size: 64px;
+        } */
+
+        #hour:hover {
+            background: linear-gradient(to right, red, yellow);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* #minute {
+            border: 2px solid gold;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 10px green;
+            height: 70px;
+            width: 90px;
+            text-align: center;
+            border-radius: 30%;
+            padding: 30px;
+            font-size: 64px;
+        } */
+
+        #minute:hover {
+            background: linear-gradient(to right, red, yellow);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* #second {
+            border: 2px solid gold;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 10px green;
+            height: 70px;
+            width: 90px;
+            text-align: center;
+            border-radius: 30%;
+            padding: 30px;
+            font-size: 64px;
+        } */
+        #second:hover {
+            background: linear-gradient(to right, red, yellow);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock">
+       
+        <h1 id="hour"></h1>
+        <h1 id="minute"></h1>
+        <h1 id="second"></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
