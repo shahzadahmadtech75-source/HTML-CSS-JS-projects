@@ -1,0 +1,244 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(206, 199, 199);
+    }
+
+    header {
+      background-color: rgb(66, 66, 241);
+      height: 10vh;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      transform: translate(22px, 5px);
+      align-items: center;
+    }
+
+    nav ul li {
+      padding: 13px 23px;
+      color: aliceblue;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    nav ul li:hover {
+      cursor: pointer;
+      font-weight: bolder;
+    }
+
+    .logo {
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: xx-large;
+      font-weight: 900;
+      font-style: oblique;
+      padding-left: 10px;
+      transform: translateY(5px);
+    }
+
+    nav input {
+      margin-left: 138px;
+      padding-left: 13px;
+      height: 38px;
+      width: 472px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      transform: translateY(6px);
+    }
+
+    nav input:hover {
+      border: 1px solid green;
+      cursor: text;
+      height: 40px;
+    }
+
+    .btn {
+      height: 40px;
+      width: 73px;
+      margin-left: 5px;
+      color: blue;
+      border: 1px solid blue;
+      border-radius: 10px;
+      transform: translateY(7px);
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background-color: rgb(36, 233, 36);
+      color: rgb(5, 5, 177);
+    }
+
+    main {
+      min-height: 75vh
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 9px;
+    }
+
+    main img {
+      width: 80vw;
+      height: 40vh;
+    }
+
+    .card {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      /* transform: translateX(-35vw); */
+      border: 1px solid gray;
+      margin-top: 16px;
+      width: 90vw;
+      margin-left: 5vw;
+      padding: 12px;
+      border-radius: 12px;
+      background-color: bisque;
+      margin-bottom: 55px;
+    }
+
+    .card img:hover {
+      transition-property: border, cursor, transform;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      border: 2px solid green;
+      cursor: pointer;
+      transform: rotateX(180deg);
+    }
+
+    .card p:hover {
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    del:hover {
+      background-color: brown;
+      color: gold;
+
+    }
+
+    .card img {
+      width: 15vw;
+      height: 18vh;
+      transform: translateX(-35vw);
+      margin-bottom: 3px;
+      border-radius: 5px;
+      border: 1px solid greenyellow;
+    }
+
+    .card p {
+      transform: translateX(-35vw);
+      margin-top: 3px;
+    }
+
+    .card h2 {
+      align-self: flex-start;
+      margin-bottom: 15px;
+      /* font-size: x-large; */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: rgb(45, 45, 236);
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: beige;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 550;
+    }
+
+    @media screen and (max-width:1100px) {
+      header {
+        height: 35vh;
+      }
+
+      .logo {
+        position: relative;
+        top: -77px;
+        left: 6vw;
+
+      }
+
+      ul {
+        /* display: inline-flex; */
+        flex-direction: column;
+        margin-top: 65px;
+        position: relative;
+        right: 110px;
+      }
+
+      nav input {
+        width: 40vw;
+        position: relative;
+        right: 155px;
+        bottom: 73px;
+
+
+      }
+
+      .btn {
+        position: relative;
+        right: 155px;
+        bottom: 73px;
+      }
+
+      .card {
+        padding: 33px;
+
+      }
+
+      @media screen and (max-width:412px) {
+        header {
+          height: 45vh;
+        }
+
+        .logo {
+          position: relative;
+          top: -77px;
+          left: 6vw;
+        }
+
+        ul {
+          /* display: inline-flex; */
+          flex-direction: column;
+          margin-top: 65px;
+          position: relative;
+          right: 110px;
+        }
+
+        nav input {
+          width: 40vw;
+          position: relative;
+          right: 196px;
+          bottom: 73px;
+
+
+        }
+
+        .btn {
+          position: relative;
+          right: 200px;
+          bottom: 73px;
+          height: 34px;
+          width: 62px;
+        }
+
+        .card {
+          padding: 63px;
+
+        }
+      
